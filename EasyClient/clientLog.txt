@@ -1,0 +1,38 @@
+Info [2018-10-24 22:34:12]Log::setLogPath success,<clientLog.txt,w>
+Error [2018-10-24 22:34:12]Config::getStr not find <strIP>
+Info [2018-10-24 22:34:12]Config::getStr strIP=127.0.0.1
+Error [2018-10-24 22:34:12]Config::getStr not find <nPort>
+Info [2018-10-24 22:34:12]Config::getInt nPort=4567
+Error [2018-10-24 22:34:12]Config::getStr not find <nThread>
+Info [2018-10-24 22:34:12]Config::getInt nThread=1
+Error [2018-10-24 22:34:12]Config::getStr not find <nClient>
+Info [2018-10-24 22:34:12]Config::getInt nClient=10000
+Error [2018-10-24 22:34:12]Config::getStr not find <nMsg>
+Info [2018-10-24 22:34:12]Config::getInt nMsg=10
+Error [2018-10-24 22:34:12]Config::getStr not find <nSendSleep>
+Info [2018-10-24 22:34:12]Config::getInt nSendSleep=100
+Error [2018-10-24 22:34:12]Config::getStr not find <nWorkSleep>
+Info [2018-10-24 22:34:12]Config::getInt nWorkSleep=1
+Error [2018-10-24 22:34:12]Config::getStr not find <nSendBuffSize>
+Info [2018-10-24 22:34:12]Config::getInt nSendBuffSize=10240
+Error [2018-10-24 22:34:12]Config::getStr not find <nRecvBuffSize>
+Info [2018-10-24 22:34:12]Config::getInt nRecvBuffSize=8192
+Info [2018-10-24 22:34:12]thread<1>,start
+Info [2018-10-24 22:34:13]thread<1>,clients<10000>,connect<0>,time<1.000524>,send<0>
+PError [2018-10-24 22:34:13]<socket=184> connect <127.0.0.1:4567> failed...
+PError [2018-10-24 22:34:13]errno=10061,errmsg=由于目标计算机积极拒绝，无法连接。
+Info [2018-10-24 22:34:13]thread<1>,Connect<begin=0, end=10000 ,nConnect=0>
+Info [2018-10-24 22:34:14]thread<1>,clients<10000>,connect<0>,time<1.001359>,send<0>
+Info [2018-10-24 22:34:15]thread<1>,clients<10000>,connect<0>,time<1.001444>,send<0>
+Info [2018-10-24 22:34:16]thread<1>,clients<10000>,connect<0>,time<1.001393>,send<0>
+Info [2018-10-24 22:34:17]thread<1>,clients<10000>,connect<0>,time<1.000616>,send<0>
+Info [2018-10-24 22:34:18]thread<1>,clients<10000>,connect<0>,time<1.000453>,send<0>
+Info [2018-10-24 22:34:19]thread<1>,clients<10000>,connect<0>,time<1.000603>,send<0>
+Info [2018-10-24 22:34:20]thread<1>,clients<10000>,connect<0>,time<1.000310>,send<0>
+Info [2018-10-24 22:34:21]thread<1>,clients<10000>,connect<0>,time<1.000892>,send<0>
+Info [2018-10-24 22:34:22]thread<1>,clients<10000>,connect<0>,time<1.001431>,send<0>
+Info [2018-10-24 22:34:23]thread<1>,clients<10000>,connect<0>,time<1.001440>,send<0>
+Info [2018-10-24 22:34:24]thread<1>,clients<10000>,connect<0>,time<1.001041>,send<0>
+Info [2018-10-24 22:34:25]thread<1>,clients<10000>,connect<0>,time<1.000936>,send<0>
+Info [2018-10-24 22:34:26]thread<1>,clients<10000>,connect<0>,time<1.001447>,send<0>
+Info [2018-10-24 22:34:27]thread<1>,clients<10000>,connect<0>,time<1.000588>,send<0>

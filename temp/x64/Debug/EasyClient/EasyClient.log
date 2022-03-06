@@ -1,0 +1,40 @@
+﻿C:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(495,5): warning MSB8004: Intermediate 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Intermediate 目录。
+C:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  client.cpp
+F:\A3-git_repos\WebSocket2\depends\include\CELL.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(69,26): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(70,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(73,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(77,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\depends\include\Iocp.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\A3-git_repos\WebSocket2\depends\include\Client.hpp(153,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(202,1): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(207,1): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
+F:\A3-git_repos\WebSocket2\EasyClient\client.cpp(200,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\EasyClient\client.cpp(201,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\EasyClient\client.cpp(292,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(42,1): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(31): message : 查看对正在编译的函数 模板 实例化“bool doyou::io::ReadByteStream::Read<uint16_t>(T &,bool)”的引用
+          with
+          [
+              T=uint16_t
+          ]
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(48,1): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(225,1): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(180): message : 查看对正在编译的函数 模板 实例化“bool doyou::io::WriteByteStream::Write<uint16_t>(T)”的引用
+          with
+          [
+              T=uint16_t
+          ]
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(230,1): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(242,1): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(197): message : 查看对正在编译的函数 模板 实例化“bool doyou::io::WriteByteStream::WriteArray<const char>(T *,uint32_t)”的引用
+          with
+          [
+              T=const char
+          ]
+F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(249,1): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(183,26): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(94): message : 查看对正在编译的函数 模板 实例化“void doyou::io::Log::EchoReal<const char*>(bool,const char *,const char *,const char *)”的引用
+F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(89): message : 查看对正在编译的函数 模板 实例化“void doyou::io::Log::PError<const char*>(const char *,const char *)”的引用
+  EasyClient.vcxproj -> F:\A3-git_repos\WebSocket2\bin\x64\Debug\EasyClient.exe
