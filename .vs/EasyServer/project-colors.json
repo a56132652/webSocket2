@@ -10,7 +10,12 @@
       "ProjectGuid": "aeefb4ee-44e6-4776-a435-38562eb450a6",
       "DisplayName": "EasyClient",
       "ColorIndex": 1
+    },
+    "fccef8eb-17e4-4246-9a19-dae27e491cf2": {
+      "ProjectGuid": "fccef8eb-17e4-4246-9a19-dae27e491cf2",
+      "DisplayName": "HelloHttp",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

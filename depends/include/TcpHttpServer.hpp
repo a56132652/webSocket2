@@ -1,22 +1,18 @@
-﻿#ifndef _TcpHttpServer_hpp_
-#define _TcpHttpServer_hpp_
+#ifndef _doyou_io_TcpHttpServer_HPP_
+#define _doyou_io_TcpHttpServer_HPP_
 
-#include"TcpServerMgr.hpp"
 #include"HttpClient.hpp"
+#include"TcpServerMgr.hpp"
 
 namespace doyou {
 	namespace io {
-
-		class TcpHttpServer : public TcpServerMgr
+		class TcpHttpServer :public TcpServerMgr
 		{
-		protected:
-			virtual void makeClientObj(SOCKET cSock, char* ip)
+			virtual Client* makeClientObj(SOCKET cSock)
 			{
-				auto c = new HttpClient(cSock, _nSendBuffSize, _nRecvBuffSize);
-				c->setIP(ip);
-				addClientToCELLServer(c);
+				return new HttpClient(cSock, _nSendBuffSize, _nRecvBuffSize);
 			}
 		};
 	}
 }
-#endif // !_TcpHttpServer_hpp_
+#endif // !_doyou_io_TcpHttpServer_HPP_

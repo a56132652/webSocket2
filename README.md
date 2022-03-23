@@ -233,3 +233,10 @@ char* getAcceptExAddrs6(IO_DATA_BASE* pIO_DATA)
 			}
 ```
 
+
+
+## 支持https通信
+
+
+
+# 

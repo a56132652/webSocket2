@@ -7,10 +7,14 @@ F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(70,26): warning C4996: 'local
 F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(71,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(74,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 F:\A3-git_repos\WebSocket2\depends\include\Log.hpp(78,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\A3-git_repos\WebSocket2\depends\include\Iocp.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 F:\A3-git_repos\WebSocket2\depends\include\Client.hpp(153,6): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 F:\A3-git_repos\WebSocket2\depends\include\Server.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-F:\A3-git_repos\WebSocket2\depends\include\IocpServer.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\A3-git_repos\WebSocket2\depends\include\SelectServer.hpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\A3-git_repos\WebSocket2\depends\include\SelectServer.hpp(65,28): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\SelectServer.hpp(68,28): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+F:\A3-git_repos\WebSocket2\depends\include\SelectServer.hpp(93,23): warning C4018: “<”: 有符号/无符号不匹配
+F:\A3-git_repos\WebSocket2\depends\include\SelectServer.hpp(129,23): warning C4018: “<”: 有符号/无符号不匹配
+F:\A3-git_repos\WebSocket2\depends\include\TcpSelectServer.hpp(34,32): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
 F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(202,1): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
 F:\A3-git_repos\WebSocket2\depends\include\MsgStream.hpp(207,1): warning C4267: “参数”: 从“size_t”转换到“uint32_t”，可能丢失数据
 F:\A3-git_repos\WebSocket2\EasyServer\server.cpp(196,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

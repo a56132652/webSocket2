@@ -32,10 +32,10 @@ namespace doyou {
 				return _pBuff;
 			}
 
-			//inline int dataLen()
-			//{
-			//	return _nLast;
-			//}
+			inline int dataLen()
+			{
+				return _nLast;
+			}
 
 			//inline int buffSize()
 			//{
@@ -135,6 +135,7 @@ namespace doyou {
 					}
 					//消息缓冲区的数据尾部位置后移
 					_nLast += nLen;
+					_pBuff[_nLast] = 0;
 					return nLen;
 				}
 				return 0;

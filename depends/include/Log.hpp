@@ -97,7 +97,7 @@ namespace doyou {
 #ifdef _WIN32
 				auto errCode = GetLastError();
 
-				Instance()._taskServer.addTask([errCode, logStr]() {
+				Instance()._taskServer.addTask([errCode,logStr]() {
 
 					char text[256] = {};
 					FormatMessageA(
@@ -111,14 +111,14 @@ namespace doyou {
 					EchoReal(true, "PError ", "%s", logStr);
 					EchoReal(false, "PError ", "errno=%d,errmsg=%s", errCode, text);
 					delete[] logStr;
-					});
+				});
 #else
 				auto errCode = errno;
 				Instance()._taskServer.addTask([errCode, logStr]() {
 					EchoReal(true, "PError ", "%s", logStr);
 					EchoReal(true, "PError ", "errno<%d>,errmsg<%s>", errCode, strerror(errCode));
 					delete[] logStr;
-					});
+				});
 #endif
 			}
 
@@ -174,7 +174,7 @@ namespace doyou {
 				pLog->_taskServer.addTask([type, logStr]() {
 					EchoReal(true, type, "%s", logStr);
 					delete[] logStr;
-					});
+				});
 			}
 
 			template<typename ...Args>
@@ -215,7 +215,7 @@ namespace doyou {
 				return pFormatStr;
 			}
 		private:
-			FILE* _logFile = nullptr;
+			FILE * _logFile = nullptr;
 			TaskServer _taskServer;
 		};
 	}

@@ -1,0 +1,20 @@
+Info [2018-11-1 22:33:49]Log::setLogPath success,<serverLog.txt,w>
+Error [2018-11-1 22:33:49]Config::getStr not find <strIP>
+Info [2018-11-1 22:33:49]Config::getStr strIP=any
+Error [2018-11-1 22:33:49]Config::getStr not find <nPort>
+Info [2018-11-1 22:33:49]Config::getInt nPort=4567
+Error [2018-11-1 22:33:49]Config::getStr not find <nThread>
+Info [2018-11-1 22:33:49]Config::getInt nThread=1
+Error [2018-11-1 22:33:49]Config::getStr not find <nSendBuffSize>
+Info [2018-11-1 22:33:49]Config::getInt nSendBuffSize=10240
+Error [2018-11-1 22:33:49]Config::getStr not find <nRecvBuffSize>
+Info [2018-11-1 22:33:49]Config::getInt nRecvBuffSize=8192
+Error [2018-11-1 22:33:49]Config::getStr not find <nMaxClient>
+Info [2018-11-1 22:33:49]Config::getInt nMaxClient=65535
+Info [2018-11-1 22:33:49]-ipv4
+Info [2018-11-1 22:33:49]create socket<188> success...
+Info [2018-11-1 22:33:49]bind port<4567> success...
+Info [2018-11-1 22:33:49]listen port<188> success...
+Info [2018-11-1 22:33:50]thread<1>,time<1.000044>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2018-11-1 22:33:51]thread<1>,time<1.000544>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2018-11-1 22:33:52]thread<1>,time<1.001212>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>

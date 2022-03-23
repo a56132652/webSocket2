@@ -174,23 +174,10 @@ namespace doyou {
 				}
 				else
 				{
-					NetWork::make_reuseaddr(cSock);
 					//获取IP地址
 					static char ip[INET6_ADDRSTRLEN] = {};
 					inet_ntop(AF_INET6, &clientAddr.sin6_addr, ip, INET6_ADDRSTRLEN - 1);
-					CELLLog_Info("Accept_IP: %s", ip);
-					if (_clientAccept < _nMaxClient)
-					{
-						_clientAccept++;
-						//将新客户端分配给客户数量最少的cellServer
-						auto c = new Client(cSock, _nSendBuffSize, _nRecvBuffSize);
-						c->setIP(ip);
-						addClientToCELLServer(c);
-					}
-					else {
-						NetWork::destorySocket(cSock);
-						CELLLog_Warring("Accept to nMaxClient");
-					}
+					AcceptClient(cSock, ip);
 				}
 				return cSock;
 			}
@@ -211,24 +198,34 @@ namespace doyou {
 				}
 				else
 				{
-					NetWork::make_reuseaddr(cSock);
 					//获取IP地址
 					char* ip = inet_ntoa(clientAddr.sin_addr);
-					CELLLog_Info("Accept_IP: %s", ip);
-					if (_clientAccept < _nMaxClient)
-					{
-						_clientAccept++;
-						//将新客户端分配给客户数量最少的cellServer
-						auto c = new Client(cSock, _nSendBuffSize, _nRecvBuffSize);
-						c->setIP(ip);
-						addClientToCELLServer(c);
-					}
-					else {
-						NetWork::destorySocket(cSock);
-						CELLLog_Warring("Accept to nMaxClient");
-					}
+					AcceptClient(cSock, ip);
 				}
 				return cSock;
+			}
+
+			void AcceptClient(SOCKET cSock, char* ip)
+			{
+				NetWork::make_reuseaddr(cSock);
+				CELLLog_Info("Accept_IP: %s, %d", ip, cSock);
+				if (_clientAccept < _nMaxClient)
+				{
+					_clientAccept++;
+					//将新客户端分配给客户数量最少的cellServer
+					auto c = makeClientObj(cSock);
+					c->setIP(ip);
+					addClientToCELLServer(c);
+				}
+				else {
+					NetWork::destorySocket(cSock);
+					CELLLog_Warring("Accept to nMaxClient");
+				}
+			}
+
+			virtual Client* makeClientObj(SOCKET cSock)
+			{
+				return new Client(cSock, _nSendBuffSize, _nRecvBuffSize);
 			}
 
 			void addClientToCELLServer(Client* pClient)

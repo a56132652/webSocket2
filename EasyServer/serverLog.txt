@@ -1,18 +1,81 @@
-Info [2022-3-3 15:33:57]Log::setLogPath success,<serverLog.txt,w>
-Error [2022-3-3 15:33:57]Config::getStr not find <strIP>
-Info [2022-3-3 15:33:57]Config::getStr strIP=any
-Error [2022-3-3 15:33:57]Config::getStr not find <nPort>
-Info [2022-3-3 15:33:57]Config::getInt nPort=4567
-Error [2022-3-3 15:33:57]Config::getStr not find <nThread>
-Info [2022-3-3 15:33:57]Config::getInt nThread=1
-Error [2022-3-3 15:33:57]Config::getStr not find <nSendBuffSize>
-Info [2022-3-3 15:33:57]Config::getInt nSendBuffSize=10240
-Error [2022-3-3 15:33:57]Config::getStr not find <nRecvBuffSize>
-Info [2022-3-3 15:33:57]Config::getInt nRecvBuffSize=8192
-Error [2022-3-3 15:33:57]Config::getStr not find <nMaxClient>
-Info [2022-3-3 15:33:57]Config::getInt nMaxClient=65535
-Info [2022-3-3 15:33:57]create socket<204> success...
-Info [2022-3-3 15:33:57]bind port<4567> success...
-Info [2022-3-3 15:33:57]listen port<204> success...
-Info [2022-3-3 15:33:58]thread<1>,time<1.000415>,socket<204>,Accept<0>,Join<0>,recv<0>,msg<0>
-Info [2022-3-3 15:33:59]thread<1>,time<1.006189>,socket<204>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:1:52]Log::setLogPath success,<serverLog.txt,w>
+Error [2022-3-23 17:1:52]Config::getStr not find <strIP>
+Info [2022-3-23 17:1:52]Config::getStr strIP=any
+Error [2022-3-23 17:1:52]Config::getStr not find <nPort>
+Info [2022-3-23 17:1:52]Config::getInt nPort=4567
+Error [2022-3-23 17:1:52]Config::getStr not find <nThread>
+Info [2022-3-23 17:1:52]Config::getInt nThread=1
+Error [2022-3-23 17:1:52]Config::getStr not find <nSendBuffSize>
+Info [2022-3-23 17:1:52]Config::getInt nSendBuffSize=10240
+Error [2022-3-23 17:1:52]Config::getStr not find <nRecvBuffSize>
+Info [2022-3-23 17:1:52]Config::getInt nRecvBuffSize=8192
+Error [2022-3-23 17:1:52]Config::getStr not find <nMaxClient>
+Info [2022-3-23 17:1:52]Config::getInt nMaxClient=65535
+Info [2022-3-23 17:1:52]create socket<188> success...
+Info [2022-3-23 17:1:52]bind port<4567> success...
+Info [2022-3-23 17:1:52]listen port<188> success...
+Info [2022-3-23 17:1:53]thread<1>,time<1.000602>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:1:54]thread<1>,time<1.013159>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:1:55]thread<1>,time<1.005213>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:1:56]thread<1>,time<1.005664>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:1:57]thread<1>,time<1.005535>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:1:58]thread<1>,time<1.006147>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:1:59]thread<1>,time<1.005417>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:0]thread<1>,time<1.006019>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:1]thread<1>,time<1.005141>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:2]thread<1>,time<1.005171>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:3]thread<1>,time<1.005432>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:4]thread<1>,time<1.005136>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:5]thread<1>,time<1.005645>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:6]thread<1>,time<1.005479>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:7]thread<1>,time<1.005169>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:8]thread<1>,time<1.005147>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:9]thread<1>,time<1.005159>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:10]thread<1>,time<1.005143>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:11]thread<1>,time<1.005153>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:12]thread<1>,time<1.005284>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:13]thread<1>,time<1.005126>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:14]thread<1>,time<1.005158>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:15]thread<1>,time<1.005519>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:16]thread<1>,time<1.005130>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:17]thread<1>,time<1.005167>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:18]thread<1>,time<1.005173>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:19]thread<1>,time<1.005792>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:20]thread<1>,time<1.005161>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:21]thread<1>,time<1.007014>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:22]thread<1>,time<1.006145>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:23]thread<1>,time<1.003396>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:24]thread<1>,time<1.002336>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:25]thread<1>,time<1.002078>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:26]thread<1>,time<1.008797>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:27]thread<1>,time<1.003920>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:28]thread<1>,time<1.007456>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:29]thread<1>,time<1.004126>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:30]thread<1>,time<1.003564>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:31]thread<1>,time<1.004242>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:32]thread<1>,time<1.004306>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:33]thread<1>,time<1.001554>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:34]thread<1>,time<1.014734>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:35]thread<1>,time<1.004026>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:36]thread<1>,time<1.004792>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:37]thread<1>,time<1.012168>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-3-23 17:2:37]Accept_IP: 127.0.0.1
+Info [2022-3-23 17:2:37]Accept_IP: 127.0.0.1
+Info [2022-3-23 17:2:38]thread<1>,time<1.004443>,socket<188>,Accept<2>,Join<2>,recv<1>,msg<0>
+Info [2022-3-23 17:2:39]thread<1>,time<1.003530>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:40]thread<1>,time<1.008771>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:41]thread<1>,time<1.004392>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:42]thread<1>,time<1.007800>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:43]thread<1>,time<1.002717>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:44]thread<1>,time<1.005984>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:45]thread<1>,time<1.007511>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:46]thread<1>,time<1.002995>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:47]thread<1>,time<1.006538>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:48]thread<1>,time<1.004539>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+Info [2022-3-23 17:2:49]thread<1>,time<1.003640>,socket<188>,Accept<2>,Join<2>,recv<0>,msg<0>
+PError [2022-3-23 17:2:50]read4socket:sockfd<200> nSize<8192> nLast<700> nLen<0>
+PError [2022-3-23 17:2:50]errno=0,errmsg=操作成功完成。
+Info [2022-3-23 17:2:50]thread<1>,time<1.009657>,socket<188>,Accept<1>,Join<1>,recv<1>,msg<0>
+Info [2022-3-23 17:2:51]thread<1>,time<1.003682>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2022-3-23 17:2:52]thread<1>,time<1.001101>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2022-3-23 17:2:53]thread<1>,time<1.000798>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>

@@ -39,7 +39,7 @@ namespace doyou {
 				resetDTSend();
 			}
 
-			~Client()
+			virtual ~Client()
 			{
 				//CELLLog_Info("~Client[sId=%d id=%d socket=%d]", serverId, id, (int)_sockfd);
 				destory();
@@ -65,7 +65,7 @@ namespace doyou {
 				return _recvBuff.read4socket(_sockfd);
 			}
 
-			bool hasMsg()
+			virtual bool hasMsg()
 			{
 				return _recvBuff.hasMsg();
 			}
@@ -75,7 +75,7 @@ namespace doyou {
 				return (netmsg_DataHeader*)_recvBuff.data();
 			}
 
-			void pop_front_msg()
+			virtual void pop_front_msg()
 			{
 				if (hasMsg())
 					_recvBuff.pop(front_msg()->dataLength);
@@ -194,7 +194,7 @@ namespace doyou {
 				return _isPostRecv || _isPostSend;
 			}
 #endif // CELL_USE_IOCP
-		private:
+		protected:
 			// socket fd_set  file desc set
 			SOCKET _sockfd = INVALID_SOCKET;
 			//第二缓冲区 接收消息缓冲区

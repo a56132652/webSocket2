@@ -58,7 +58,6 @@ namespace doyou {
 					if (IO_TYPE::ACCEPT == ioEvent.pIoData->iotype)
 					{
 						char* ip = iocp.getAcceptExAddrs(ioEvent.pIoData, _address_family);
-						CELLLog_Info("AcceptEx IP: %s,%d", ip,ioEvent.pIoData->sockfd);
 						//
 						IocpAccept(ioEvent.pIoData->sockfd,ip);
 						//继续 向IOCP投递接受连接任务
@@ -76,19 +75,7 @@ namespace doyou {
 				}
 				else
 				{
-					if (_clientAccept < _nMaxClient)
-					{
-						_clientAccept++;
-						NetWork::make_reuseaddr(cSock);
-						//将新客户端分配给客户数量最少的cellServer
-						auto c = new Client(cSock, _nSendBuffSize, _nRecvBuffSize);
-						c->setIP(ip);
-						addClientToCELLServer(c);
-					}
-					else {
-						NetWork::destorySocket(cSock);
-						CELLLog_Warring("Accept to nMaxClient");
-					}
+					AcceptClient(cSock, ip);
 				}
 				return cSock;
 			}

@@ -23,6 +23,8 @@ namespace doyou {
 
 			bool DoNetEvents()
 			{
+				if(_clients.empty())
+					return true;
 				//计算可读集合
 				if (_clients_change)
 				{
