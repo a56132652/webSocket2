@@ -54,7 +54,7 @@ public:
 			{
 				netmsg_LoginR ret;
 				ret.msgID = pClient->nSendMsgID;
-				if (SOCKET_ERROR == pClient->SendData(&ret))
+				if (SOCKET_ERROR == pClient->SendData(&ret)) 
 				{
 					//发送缓冲区满了，消息没发出去,目前直接抛弃了
 					//客户端消息太多，需要考虑应对策略

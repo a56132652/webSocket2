@@ -15,6 +15,11 @@
       "ProjectGuid": "fccef8eb-17e4-4246-9a19-dae27e491cf2",
       "DisplayName": "HelloHttp",
       "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 3
