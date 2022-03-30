@@ -37,10 +37,15 @@ namespace doyou {
 				return _nLast;
 			}
 
-			//inline int buffSize()
-			//{
-			//	return _nSize;
-			//}
+			inline int buffSize()
+			{
+				return _nSize;
+			}
+
+			bool canWrite(int size)
+			{
+				return size < _nSize - _nLast;
+			}
 
 			bool push(const char* pData, int nLen)
 			{
