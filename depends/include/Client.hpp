@@ -213,7 +213,7 @@ namespace doyou {
 
 			IO_DATA_BASE* makeSendIoData()
 			{
-				if (_isPostSend || isClose())
+				if (_isPostSend || isClose() || _sockfd == INVALID_SOCKET)
 					return nullptr;
 				_isPostSend = true;
 				return _sendBuff.makeSendIoData(_sockfd);

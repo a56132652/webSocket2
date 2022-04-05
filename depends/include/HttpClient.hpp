@@ -3,6 +3,7 @@
 
 #include"Client.hpp"
 #include"SplitString.hpp"
+#include"KeyString.hpp"
 
 namespace doyou {
 	namespace io {
@@ -262,6 +263,7 @@ namespace doyou {
 				strcat(response, "\r\n");
 				//响应头
 				strcat(response, "Content-Type: text/html;charset=UTF-8\r\n");
+				strcat(response, "Access-Control-Allow-Origin: *\r\n");
 				strcat(response, respBodyLen);
 				strcat(response, "\r\n");
 				//发送响应体
