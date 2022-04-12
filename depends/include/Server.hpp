@@ -192,13 +192,13 @@ namespace doyou {
 					nullptr,
 					//onRun
 					[this](Thread* pThread) {
-						OnRun(pThread);
-					},
+					OnRun(pThread);
+				},
 					//onDestory
-						[this](Thread* pThread) {
-						ClearClients();
-					}
-					);
+					[this](Thread* pThread) {
+					ClearClients();
+				}
+				);
 			}
 
 			size_t getClientCount()

@@ -2,7 +2,8 @@
 #define _TcpClientMgr_hpp_
 
 #if _WIN32
-	#include"TcpIocpClient.hpp"
+	//#include"TcpIocpClient.hpp"
+	#include"TcpSelectClient.hpp"
 #elif __linux__
 	#include"TcpEpollClient.hpp"
 #else
@@ -12,7 +13,8 @@
 namespace doyou {
 	namespace io {
 #if _WIN32
-		typedef TcpIocpClient TcpClientMgr;
+		//typedef TcpIocpClient TcpClientMgr;
+		typedef TcpSelectClient TcpClientMgr;
 #elif __linux__
 		typedef TcpEpollClient TcpClientMgr;
 #else

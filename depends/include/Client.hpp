@@ -108,7 +108,7 @@ namespace doyou {
 				return ret;
 			}
 
-			virtual void onSendComplete() {}
+			virtual void onSendComplete(){}
 
 			//缓冲区的控制根据业务需求的差异而调整
 			//发送数据
@@ -168,7 +168,7 @@ namespace doyou {
 			//设置客户端IP地址
 			void setIP(char* ip)
 			{
-				if (ip)
+				if(ip)
 					strncpy(_ip, ip, INET6_ADDRSTRLEN);
 			}
 			//返回客户端IP地址
@@ -200,7 +200,7 @@ namespace doyou {
 #ifdef CELL_USE_IOCP
 			IO_DATA_BASE* makeRecvIoData()
 			{
-				if (_isPostRecv || isClose())
+				if (_isPostRecv || isClose() || _sockfd == INVALID_SOCKET)
 					return nullptr;
 				_isPostRecv = true;
 				return _recvBuff.makeRecvIoData(_sockfd);
