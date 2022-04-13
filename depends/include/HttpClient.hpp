@@ -264,6 +264,7 @@ namespace doyou {
 				//响应头
 				strcat(response, "Content-Type: text/html;charset=UTF-8\r\n");
 				strcat(response, "Access-Control-Allow-Origin: *\r\n");
+				strcat(response, "Connection: Keep-Alive\r\n");
 				strcat(response, respBodyLen);
 				strcat(response, "\r\n");
 				//发送响应体

@@ -20,7 +20,7 @@ namespace doyou {
 				Close();
 			}
 			//初始化socket
-			SOCKET InitSocket(int af,int sendSize = SEND_BUFF_SZIE, int recvSize = RECV_BUFF_SZIE)
+			SOCKET InitSocket(int af, int sendSize = SEND_BUFF_SZIE, int recvSize = RECV_BUFF_SZIE)
 			{
 				NetWork::Init();
 
@@ -96,6 +96,7 @@ namespace doyou {
 					_pClient = nullptr;
 				}
 				_isConnect = false;
+				OnDisconnect();
 			}
 
 			//处理网络消息
@@ -170,8 +171,12 @@ namespace doyou {
 			virtual void OnConnect() {
 
 			};
+
+			virtual void OnDisconnect() {
+
+			};
 		protected:
-			Client * _pClient = nullptr;
+			Client* _pClient = nullptr;
 			int _address_family = AF_INET;
 			std::string _scope_id_name;
 			bool _isConnect = false;

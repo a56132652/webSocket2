@@ -15,7 +15,7 @@ namespace doyou {
 			Buffer(int nSize = 8192)
 			{
 				_nSize = nSize;
-				_pBuff = new char[_nSize];
+				_pBuff = new char[_nSize + 1];
 			}
 
 			~Buffer()
