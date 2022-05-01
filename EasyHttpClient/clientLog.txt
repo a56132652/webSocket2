@@ -1,4 +1,11 @@
-Info [2022-4-12 21:12:38]Log::setLogPath success,<clientLog.txt,w>
-Info [2022-4-12 21:12:38]127.0.0.1 ipv4: 127.0.0.1
-PError [2022-4-12 21:12:40]<socket=176> connect <127.0.0.1:4567> failed...
-PError [2022-4-12 21:12:40]errno=10061,errmsg=由于目标计算机积极拒绝，无法连接。
+Info [2019-3-19 22:39:22]Log::setLogPath success,<clientLog.txt,w>
+Info [2019-3-19 22:39:22]192.168.1.117 ipv4: 192.168.1.117
+Info [2019-3-19 22:39:22]connet2ip(192.168.1.117,4567)
+Info [2019-3-19 22:39:22]recv server msg.1 :a+b=2
+Info [2019-3-19 22:39:22]recv server msg.3 :a+b=4
+Info [2019-3-19 22:39:22]recv server msg.5 :a+b=6
+Info [2019-3-19 22:39:22]recv json msg.1 :{"a":3,"b":2}
+Info [2019-3-19 22:39:22]recv server msg.2 :a+b=3
+Info [2019-3-19 22:39:22]recv server msg.4 :a+b=5
+Info [2019-3-19 22:39:22]recv server msg.6 :a+b=7
+Info [2019-3-19 22:39:22]recv json msg.2 :{"a":4,"b":3}

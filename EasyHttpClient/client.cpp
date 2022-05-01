@@ -27,7 +27,7 @@ public:
 		HttpClientC* pHttpClient = dynamic_cast<HttpClientC*>(_pClient);
 		if (!pHttpClient)
 			return;
-
+		
 		if (!pHttpClient->getResponseInfo())
 			return;
 
@@ -36,11 +36,11 @@ public:
 			_onRespCall(pHttpClient);
 			_onRespCall = nullptr;
 		}
-
+		
 		if (!_eventQueue.empty())
 		{
 			Event& e = _eventQueue.front();
-			if (e.isGet)
+			if(e.isGet)
 				get(e.httpurl.c_str(), e.onRespCall);
 			else
 				post(e.httpurl.c_str(), e.onRespCall);
@@ -104,6 +104,14 @@ public:
 		}
 	}
 
+	void post(const char* httpurl, const char* dataStr, EventCall onRespCall)
+	{
+		std::string httpurl_ = httpurl;
+		httpurl_ += '?';
+		httpurl_ += dataStr;
+		post(httpurl_.c_str(), onRespCall);
+	}
+
 	int hostname2ip(const char* hostname, const char* port)
 	{
 		if (!hostname)
@@ -150,7 +158,7 @@ public:
 				continue;
 			}
 			else {
-				if (pAddr->ai_family == AF_INET6)
+				if(pAddr->ai_family == AF_INET6)
 					Log::Info("%s ipv6: %s", hostname, ipStr);
 				else if (pAddr->ai_family == AF_INET)
 					Log::Info("%s ipv4: %s", hostname, ipStr);
@@ -158,7 +166,7 @@ public:
 					Log::Info("%s addr: %s", hostname, ipStr);
 					continue;
 				}
-
+				
 				if (connet2ip(pAddr->ai_family, ipStr, port_))
 				{
 					_host0 = _host;
@@ -175,8 +183,8 @@ private:
 	void url2get(const char* host, const char* path, const char* args)
 	{
 		std::string msg = "GET ";
-
-		if (path && strlen(path) > 0)
+		
+		if(path && strlen(path) > 0)
 			msg += path;
 		else
 			msg += "/";
@@ -322,8 +330,8 @@ public:
 		this->get("http://192.168.1.117:4567/sub?a=5&b=2", [this](HttpClientC* pHttpClient) {
 			if (pHttpClient)
 			{
-				CELLLog_Info("recv server msg. len=%s %d| %s",
-					pHttpClient->header_getStr("Content-Length", "?"),
+				CELLLog_Info("recv server msg. len=%s %d| %s", 
+					pHttpClient->header_getStr("Content-Length", "?"), 
 					++i, pHttpClient->content());
 				//CELLLog_Info("%s", pHttpClient->content());
 			}
@@ -332,7 +340,7 @@ public:
 				CELLLog_Info("server disconnect. %d", ++i);
 			}
 			test();
-			});
+		});
 		//if (i%100 > 50)
 		//{
 		//	this->get("https://www.baidu.com", [this](HttpClientC* pHttpClient) {
@@ -350,12 +358,12 @@ public:
 	}
 };
 
-int main(int argc, char* args[])
+int main(int argc, char *args[])
 {
 #if _WIN32 && _CONSOLE
 	system("chcp 65001");
 #endif
-
+	
 	//设置运行日志名称
 	Log::Instance().setLogPath("clientLog", "w", false);
 	Config::Instance().Init(argc, args);
@@ -367,23 +375,30 @@ int main(int argc, char* args[])
 		CELLLog_Info("recv server msg.1 :%s", pHttpClient->content());
 		httpClient.post("http://192.168.1.117:4567/add?a=2&b=1", [](HttpClientC* pHttpClient) {
 			CELLLog_Info("recv server msg.2 :%s", pHttpClient->content());
-			});
 		});
+	});
 	//2
 	httpClient.post("http://192.168.1.117:4567/add?a=3&b=1", [&httpClient](HttpClientC* pHttpClient) {
 		CELLLog_Info("recv server msg.3 :%s", pHttpClient->content());
 		httpClient.post("http://192.168.1.117:4567/add?a=4&b=1", [](HttpClientC* pHttpClient) {
 			CELLLog_Info("recv server msg.4 :%s", pHttpClient->content());
-			});
 		});
+	});
 	//3
 	httpClient.post("http://192.168.1.117:4567/add?a=5&b=1", [&httpClient](HttpClientC* pHttpClient) {
 		CELLLog_Info("recv server msg.5 :%s", pHttpClient->content());
 		httpClient.post("http://192.168.1.117:4567/add?a=6&b=1", [](HttpClientC* pHttpClient) {
 			CELLLog_Info("recv server msg.6 :%s", pHttpClient->content());
-			});
 		});
+	});
 	//httpClient.test();
+
+	httpClient.post("http://192.168.1.117:4567/jsonTest", "token=abc123&json={\"a\":100,\"b\":32}", [&httpClient](HttpClientC* pHttpClient) {
+		CELLLog_Info("recv json msg.1 :%s", pHttpClient->content());
+		httpClient.post("http://192.168.1.117:4567/jsonTest?token=abc123&json={\"a\":200,\"b\":78}", [](HttpClientC* pHttpClient) {
+			CELLLog_Info("recv json msg.2 :%s", pHttpClient->content());
+		});
+	});
 
 	//auto respStr = pHttpClient->content();
 	//CELLLog_Info("%s\n", respStr);

@@ -1,20 +1,133 @@
-Info [2018-11-1 22:33:49]Log::setLogPath success,<serverLog.txt,w>
-Error [2018-11-1 22:33:49]Config::getStr not find <strIP>
-Info [2018-11-1 22:33:49]Config::getStr strIP=any
-Error [2018-11-1 22:33:49]Config::getStr not find <nPort>
-Info [2018-11-1 22:33:49]Config::getInt nPort=4567
-Error [2018-11-1 22:33:49]Config::getStr not find <nThread>
-Info [2018-11-1 22:33:49]Config::getInt nThread=1
-Error [2018-11-1 22:33:49]Config::getStr not find <nSendBuffSize>
-Info [2018-11-1 22:33:49]Config::getInt nSendBuffSize=10240
-Error [2018-11-1 22:33:49]Config::getStr not find <nRecvBuffSize>
-Info [2018-11-1 22:33:49]Config::getInt nRecvBuffSize=8192
-Error [2018-11-1 22:33:49]Config::getStr not find <nMaxClient>
-Info [2018-11-1 22:33:49]Config::getInt nMaxClient=65535
-Info [2018-11-1 22:33:49]-ipv4
-Info [2018-11-1 22:33:49]create socket<188> success...
-Info [2018-11-1 22:33:49]bind port<4567> success...
-Info [2018-11-1 22:33:49]listen port<188> success...
-Info [2018-11-1 22:33:50]thread<1>,time<1.000044>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
-Info [2018-11-1 22:33:51]thread<1>,time<1.000544>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
-Info [2018-11-1 22:33:52]thread<1>,time<1.001212>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-3-21 12:36:22]Log::setLogPath success,<serverLog.txt,w>
+Error [2019-3-21 12:36:22]Config::getStr not find <strIP>
+Info [2019-3-21 12:36:22]Config::getStr strIP=any
+Error [2019-3-21 12:36:22]Config::getStr not find <nPort>
+Info [2019-3-21 12:36:22]Config::getInt nPort=4567
+Error [2019-3-21 12:36:22]Config::getStr not find <nThread>
+Info [2019-3-21 12:36:22]Config::getInt nThread=1
+Error [2019-3-21 12:36:22]Config::getStr not find <nSendBuffSize>
+Info [2019-3-21 12:36:22]Config::getInt nSendBuffSize=10240
+Error [2019-3-21 12:36:22]Config::getStr not find <nRecvBuffSize>
+Info [2019-3-21 12:36:22]Config::getInt nRecvBuffSize=8192
+Error [2019-3-21 12:36:22]Config::getStr not find <nMaxClient>
+Info [2019-3-21 12:36:22]Config::getInt nMaxClient=65535
+Info [2019-3-21 12:36:22]-ipv4
+Info [2019-3-21 12:36:22]create socket<180> success...
+Error [2019-3-21 12:36:22]Config::getStr not find <wwwroot>
+Info [2019-3-21 12:36:22]Config::getStr wwwroot=D:/dev/www
+Error [2019-3-21 12:36:22]Config::getStr not find <indexpage>
+Info [2019-3-21 12:36:22]Config::getStr indexpage=index.html
+Info [2019-3-21 12:36:22]bind port<4567> success...
+Info [2019-3-21 12:36:22]listen port<180> success...
+Info [2019-3-21 12:36:23]thread<1>,time<1.000619>,socket<180>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-3-21 12:36:24]thread<1>,time<1.000436>,socket<180>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-3-21 12:36:25]Accept_IP: 192.168.1.117, 184
+Info [2019-3-21 12:36:30]thread<1>,time<6.064106>,socket<180>,Accept<1>,Join<1>,recv<4>,msg<4>
+Info [2019-3-21 12:36:37]thread<1>,time<6.696608>,socket<180>,Accept<1>,Join<1>,recv<4>,msg<4>
+Info [2019-3-21 12:36:38]thread<1>,time<1.000074>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:39]thread<1>,time<1.000284>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:40]thread<1>,time<1.000315>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:41]thread<1>,time<1.000192>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:42]thread<1>,time<1.000263>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:43]thread<1>,time<1.000240>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:44]thread<1>,time<1.000245>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:45]thread<1>,time<1.000352>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:46]thread<1>,time<1.000308>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:47]thread<1>,time<1.000268>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:48]thread<1>,time<1.000241>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:49]thread<1>,time<1.000268>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:50]thread<1>,time<1.000260>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:51]thread<1>,time<1.000517>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:52]thread<1>,time<1.000032>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:53]thread<1>,time<1.000488>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:54]thread<1>,time<1.000312>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:55]thread<1>,time<1.000259>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:56]thread<1>,time<1.000022>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:57]thread<1>,time<1.000231>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:58]thread<1>,time<1.000563>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:36:59]thread<1>,time<1.000043>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:0]thread<1>,time<1.000496>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:1]thread<1>,time<1.000052>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:2]thread<1>,time<1.000228>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:3]thread<1>,time<1.000467>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:4]thread<1>,time<1.000111>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:5]thread<1>,time<1.000080>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:6]thread<1>,time<1.000315>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:7]thread<1>,time<1.000449>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:8]thread<1>,time<1.000284>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:9]thread<1>,time<1.000230>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:10]thread<1>,time<1.000303>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:11]thread<1>,time<1.000033>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:12]thread<1>,time<1.000300>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:13]thread<1>,time<1.000505>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:14]thread<1>,time<1.001005>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:15]thread<1>,time<1.000490>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:16]thread<1>,time<1.000034>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:17]thread<1>,time<1.000537>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:18]thread<1>,time<1.000043>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:19]thread<1>,time<1.000358>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:20]thread<1>,time<1.000191>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:21]thread<1>,time<1.000526>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:22]thread<1>,time<1.000234>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:23]thread<1>,time<1.000272>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:24]thread<1>,time<1.000078>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:25]thread<1>,time<1.000487>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:26]thread<1>,time<1.000044>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:27]thread<1>,time<1.000180>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:28]thread<1>,time<1.000293>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:29]thread<1>,time<1.000506>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:30]thread<1>,time<1.000005>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:31]thread<1>,time<1.000260>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:32]thread<1>,time<1.000480>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:33]thread<1>,time<1.000288>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:34]thread<1>,time<1.000262>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:35]thread<1>,time<1.000238>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:36]thread<1>,time<1.000316>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:37]thread<1>,time<1.000016>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:38]thread<1>,time<1.000296>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:39]thread<1>,time<1.000266>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:40]thread<1>,time<1.000537>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:41]thread<1>,time<1.000264>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:42]thread<1>,time<1.000217>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:43]thread<1>,time<1.000011>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:44]thread<1>,time<1.000556>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:45]thread<1>,time<1.001262>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:46]thread<1>,time<1.000206>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:47]thread<1>,time<1.000252>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:48]thread<1>,time<1.000337>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:49]thread<1>,time<1.000192>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:50]thread<1>,time<1.000330>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:51]thread<1>,time<1.000216>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:52]thread<1>,time<1.000282>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:53]thread<1>,time<1.000256>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:54]thread<1>,time<1.000248>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:55]thread<1>,time<1.000089>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:56]thread<1>,time<1.000455>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:57]thread<1>,time<1.000304>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:58]thread<1>,time<1.000218>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:37:59]thread<1>,time<1.000282>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:0]thread<1>,time<1.000064>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:1]thread<1>,time<1.000514>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:2]thread<1>,time<1.000229>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:3]thread<1>,time<1.000039>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:4]thread<1>,time<1.000463>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:5]thread<1>,time<1.000163>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:6]thread<1>,time<1.000114>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:7]thread<1>,time<1.000544>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:8]thread<1>,time<1.000000>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:9]thread<1>,time<1.000361>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:10]thread<1>,time<1.000452>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:11]thread<1>,time<1.000111>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:12]thread<1>,time<1.000464>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:13]thread<1>,time<1.000673>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:14]thread<1>,time<1.000336>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:15]thread<1>,time<1.000263>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:16]thread<1>,time<1.000238>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:17]thread<1>,time<1.000515>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:18]thread<1>,time<1.000291>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:19]thread<1>,time<1.000057>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:20]thread<1>,time<1.000228>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:21]thread<1>,time<1.000416>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:22]thread<1>,time<1.000328>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:23]thread<1>,time<1.000235>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-3-21 12:38:24]thread<1>,time<1.000115>,socket<180>,Accept<1>,Join<1>,recv<0>,msg<0>

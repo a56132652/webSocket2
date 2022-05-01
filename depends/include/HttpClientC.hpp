@@ -9,11 +9,11 @@
 namespace doyou {
 	namespace io {
 		//客户端数据类型
-		class HttpClientC :public Client
+		class HttpClientC:public Client
 		{
 		public:
 			HttpClientC(SOCKET sockfd = INVALID_SOCKET, int sendSize = SEND_BUFF_SZIE, int recvSize = RECV_BUFF_SZIE) :
-				Client(sockfd, sendSize, recvSize)
+				Client(sockfd, sendSize,recvSize)
 			{
 
 			}
@@ -76,7 +76,7 @@ namespace doyou {
 					strncpy(lenStr, p1, n);
 					_bodyLen = atoi(lenStr);
 					//数据异常
-					if (_bodyLen < 0)
+					if(_bodyLen < 0)
 						return -2;
 					//响应数据超过了缓冲区可接收长度
 					if (_headerLen + _bodyLen > _recvBuff.buffSize())
@@ -92,7 +92,7 @@ namespace doyou {
 				return _headerLen;
 			}
 
-
+			
 			//解析http响应
 			//确定收到完整http响应消息的时候才能调用
 			bool getResponseInfo()
@@ -102,9 +102,9 @@ namespace doyou {
 					return false;
 				//清除上一个消息响应的数据
 				_header_map.clear();
-
+				
 				char* pp = _recvBuff.data();
-				pp[_headerLen - 1] = '\0';
+				pp[_headerLen-1] = '\0';
 
 				SplitString ss;
 				ss.set(_recvBuff.data());
@@ -151,10 +151,10 @@ namespace doyou {
 				//根据响应头，做出相应处理
 				const char* str = header_getStr("Connection", "");
 				_keepalive = (0 == strcmp("keep-alive", str) || 0 == strcmp("Keep-Alive", str));
-
+				
 				return true;
 			}
-
+			
 			//解析响应内容
 			//可以是html页面
 			//不过呢，我们只要能解析http api返回的json文本字符串

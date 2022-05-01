@@ -1,21 +1,18 @@
-Info [2022-3-25 19:6:41]Log::setLogPath success,<serverLog.txt,w>
-Error [2022-3-25 19:6:41]Config::getStr not find <strIP>
-Info [2022-3-25 19:6:41]Config::getStr strIP=any
-Error [2022-3-25 19:6:41]Config::getStr not find <nPort>
-Info [2022-3-25 19:6:41]Config::getInt nPort=4567
-Error [2022-3-25 19:6:41]Config::getStr not find <nThread>
-Info [2022-3-25 19:6:41]Config::getInt nThread=1
-Error [2022-3-25 19:6:41]Config::getStr not find <nSendBuffSize>
-Info [2022-3-25 19:6:41]Config::getInt nSendBuffSize=10240
-Error [2022-3-25 19:6:41]Config::getStr not find <nRecvBuffSize>
-Info [2022-3-25 19:6:41]Config::getInt nRecvBuffSize=8192
-Error [2022-3-25 19:6:41]Config::getStr not find <nMaxClient>
-Info [2022-3-25 19:6:41]Config::getInt nMaxClient=65535
-Info [2022-3-25 19:6:41]create socket<188> success...
-Info [2022-3-25 19:6:41]bind port<4567> success...
-Info [2022-3-25 19:6:41]listen port<188> success...
-Info [2022-3-25 19:6:42]thread<1>,time<1.000303>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
-Info [2022-3-25 19:6:43]thread<1>,time<1.000467>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
-Info [2022-3-25 19:6:44]thread<1>,time<1.000479>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
-Info [2022-3-25 19:6:45]thread<1>,time<1.000339>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
-Info [2022-3-25 19:6:46]thread<1>,time<1.001631>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-4-8 0:7:6]Log::setLogPath success,<serverLog.txt,w>
+Error [2022-4-8 0:7:6]Config::getStr not find <strIP>
+Info [2022-4-8 0:7:6]Config::getStr strIP=any
+Error [2022-4-8 0:7:6]Config::getStr not find <nPort>
+Info [2022-4-8 0:7:6]Config::getInt nPort=4567
+Error [2022-4-8 0:7:6]Config::getStr not find <nThread>
+Info [2022-4-8 0:7:6]Config::getInt nThread=1
+Error [2022-4-8 0:7:6]Config::getStr not find <nSendBuffSize>
+Info [2022-4-8 0:7:6]Config::getInt nSendBuffSize=10240
+Error [2022-4-8 0:7:6]Config::getStr not find <nRecvBuffSize>
+Info [2022-4-8 0:7:6]Config::getInt nRecvBuffSize=8192
+Error [2022-4-8 0:7:6]Config::getStr not find <nMaxClient>
+Info [2022-4-8 0:7:6]Config::getInt nMaxClient=65535
+Info [2022-4-8 0:7:6]create socket<212> success...
+Info [2022-4-8 0:7:6]bind port<4567> success...
+Info [2022-4-8 0:7:6]listen port<212> success...
+Info [2022-4-8 0:7:7]thread<1>,time<1.001098>,socket<212>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2022-4-8 0:7:8]thread<1>,time<1.008144>,socket<212>,Accept<0>,Join<0>,recv<0>,msg<0>

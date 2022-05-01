@@ -21,72 +21,37 @@
   <ItemGroup>
     <ClCompile Include="server.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\depends\include\Buffer.hpp" />
-    <ClInclude Include="..\depends\include\ByteStream.hpp" />
-    <ClInclude Include="..\depends\include\CELL.hpp" />
-    <ClInclude Include="..\depends\include\Client.hpp" />
-    <ClInclude Include="..\depends\include\Config.hpp" />
-    <ClInclude Include="..\depends\include\Epoll.hpp" />
-    <ClInclude Include="..\depends\include\EpollServer.hpp" />
-    <ClInclude Include="..\depends\include\FDSet.hpp" />
-    <ClInclude Include="..\depends\include\HttpClient.hpp" />
-    <ClInclude Include="..\depends\include\INetEvent.hpp" />
-    <ClInclude Include="..\depends\include\Iocp.hpp" />
-    <ClInclude Include="..\depends\include\IocpServer.hpp" />
-    <ClInclude Include="..\depends\include\Log.hpp" />
-    <ClInclude Include="..\depends\include\MessageHeader.hpp" />
-    <ClInclude Include="..\depends\include\MsgStream.hpp" />
-    <ClInclude Include="..\depends\include\NetWork.hpp" />
-    <ClInclude Include="..\depends\include\SelectServer.hpp" />
-    <ClInclude Include="..\depends\include\Semaphore.hpp" />
-    <ClInclude Include="..\depends\include\Server.hpp" />
-    <ClInclude Include="..\depends\include\SplitString.hpp" />
-    <ClInclude Include="..\depends\include\Task.hpp" />
-    <ClInclude Include="..\depends\include\TcpClient.hpp" />
-    <ClInclude Include="..\depends\include\TcpEpollClient.hpp" />
-    <ClInclude Include="..\depends\include\TcpEpollServer.hpp" />
-    <ClInclude Include="..\depends\include\TcpHttpServer.hpp" />
-    <ClInclude Include="..\depends\include\TcpIocpClient.hpp" />
-    <ClInclude Include="..\depends\include\TcpIocpServer.hpp" />
-    <ClInclude Include="..\depends\include\TcpSelectClient.hpp" />
-    <ClInclude Include="..\depends\include\TcpSelectServer.hpp" />
-    <ClInclude Include="..\depends\include\TcpServer.hpp" />
-    <ClInclude Include="..\depends\include\TcpServerMgr.hpp" />
-    <ClInclude Include="..\depends\include\Thread.hpp" />
-    <ClInclude Include="..\depends\include\Timestamp.hpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{A337C73A-B3AF-4E23-B608-8F3FE8CFEADB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>EasyServer</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>

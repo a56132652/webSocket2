@@ -116,5 +116,11 @@
     <ClInclude Include="..\depends\include\TcpHttpServer.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\depends\include\SplitString.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\include\HttpClientC.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

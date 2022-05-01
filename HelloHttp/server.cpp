@@ -4,16 +4,17 @@
 
 using namespace doyou::io;
 
-class MyServer :public TcpHttpServer
+class MyServer:public TcpHttpServer
 {
 public:
 	virtual void OnNetMsg(Server* pServer, Client* pClient, netmsg_DataHeader* header)
 	{
+		TcpServer::OnNetMsg(pServer, pClient, header);
 		HttpClient* pHttpClient = dynamic_cast<HttpClient*>(pClient);
 		if (!pHttpClient)
 			return;
 
-		if (!pHttpClient->getRequestInfo())
+		if(!pHttpClient->getRequestInfo())
 			return;
 
 		if (pHttpClient->url_compre("/add"))
@@ -38,6 +39,24 @@ public:
 
 			pHttpClient->resp200OK(respBodyBuff, strlen(respBodyBuff));
 		}
+		else if (pHttpClient->url_compre("/jsonTest"))
+		{
+			auto tokenStr = pHttpClient->args_getStr("token", nullptr);
+			if (tokenStr)
+			{
+				//å¯¹tokenStrè¿›è¡Œèº«ä»½éªŒè¯
+				auto jsonStr = pHttpClient->args_getStr("json", "no json data");
+				//ä½¿ç”¨ç¬¬ä¸‰æ–¹jsonåº“è§£æjsonStr
+				//åšå‡ºç›¸åº”å¤„ç†
+				//åé¦ˆç»“æœ
+				pHttpClient->resp200OK(jsonStr, strlen(jsonStr));
+			}
+			else
+			{
+				auto ret = "{\"status\":\"error\"}";
+				pHttpClient->resp200OK(ret, strlen(ret));
+			}
+		}
 		else {
 			if (!respFile(pHttpClient))
 			{
@@ -58,16 +77,16 @@ public:
 			filePath = _wwwRoot + pHttpClient->url();
 		}
 
-		FILE* file = fopen(filePath.c_str(), "rb");
+		FILE * file = fopen(filePath.c_str(), "rb");
 		if (!file)
 			return false;
 
-		//»ñÈ¡ÎÄ¼ş´óĞ¡
+		//è·å–æ–‡ä»¶å¤§å°
 		fseek(file, 0, SEEK_END);
 		auto bytesize = ftell(file);
 		rewind(file);
 
-		//·¢ËÍ»º³åÇøÊÇ·ñÄÜĞ´ÈëÕâÃ´¶àÊı¾İ
+		//å‘é€ç¼“å†²åŒºæ˜¯å¦èƒ½å†™å…¥è¿™ä¹ˆå¤šæ•°æ®
 		if (!pHttpClient->canWrite(bytesize))
 		{
 			CELLLog_Warring("!pHttpClient->canWrite(bytesize), url=%s", filePath.c_str());
@@ -75,24 +94,24 @@ public:
 			return false;
 		}
 
-		//¶ÁÈ¡
+		//è¯»å–
 		char* buff = new char[bytesize];
 		auto readsize = fread(buff, 1, bytesize, file);
 		if (readsize != bytesize)
 		{
 			CELLLog_Warring("readsize != bytesize, url=%s", filePath.c_str());
-			//ÊÍ·ÅÄÚ´æ
+			//é‡Šæ”¾å†…å­˜
 			delete[] buff;
-			//¹Ø±ÕÎÄ¼ş
+			//å…³é—­æ–‡ä»¶
 			fclose(file);
 			return false;
 		}
 
 		pHttpClient->resp200OK(buff, readsize);
 
-		//ÊÍ·ÅÄÚ´æ
+		//é‡Šæ”¾å†…å­˜
 		delete[] buff;
-		//¹Ø±ÕÎÄ¼ş
+		//å…³é—­æ–‡ä»¶
 		fclose(file);
 
 		return true;
@@ -114,7 +133,7 @@ private:
 
 int main(int argc, char* args[])
 {
-	//ÉèÖÃÔËĞĞÈÕÖ¾Ãû³Æ
+	//è®¾ç½®è¿è¡Œæ—¥å¿—åç§°
 	Log::Instance().setLogPath("serverLog", "w", false);
 	Config::Instance().Init(argc, args);
 
@@ -138,8 +157,8 @@ int main(int argc, char* args[])
 		server.InitSocket();
 	}
 
-	const char* wwwroot = Config::Instance().getStr("wwwroot", "");
-	const char* indexpage = Config::Instance().getStr("indexpage", "");
+	const char* wwwroot = Config::Instance().getStr("wwwroot", "D:/dev/www");
+	const char* indexpage = Config::Instance().getStr("indexpage", "index.html");
 	server.wwwRoot(wwwroot);
 	server.indexPage(indexpage);
 
@@ -147,7 +166,7 @@ int main(int argc, char* args[])
 	server.Listen(SOMAXCONN);
 	server.Start(nThread);
 
-	//ÔÚÖ÷Ïß³ÌÖĞµÈ´ıÓÃ»§ÊäÈëÃüÁî
+	//åœ¨ä¸»çº¿ç¨‹ä¸­ç­‰å¾…ç”¨æˆ·è¾“å…¥å‘½ä»¤
 	while (true)
 	{
 		char cmdBuf[256] = {};
@@ -166,17 +185,3 @@ int main(int argc, char* args[])
 
 	return 0;
 }
-
-//char htmlStr[] = 
-//"\
-//<!DOCTYPE html>\
-//<html>\
-//<head>\
-//<title>HelloWeb</title>\
-//</head>\
-//<body>\
-//    <button>GET</button>\
-//	<button>POST</button>\
-//</body>\
-//</html>\
-//";
