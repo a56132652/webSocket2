@@ -1,51 +1,25 @@
 #include"Log.hpp"
 #include"Config.hpp"
-#include"TcpHttpServer.hpp"
-#include"sha1.hpp"
-#include"base64.hpp"
+#include"TcpWebSocketServer.hpp"
 
 using namespace doyou::io;
 
-class MyServer:public TcpHttpServer
+class MyServer :public TcpWebSocketServer
 {
 public:
-	virtual void OnNetMsgHttp(Server* pServer, HttpClientS* pHttpClient)
+	virtual void OnNetMsgWS(Server* pServer, WebSocketClientS* pWSClient)
 	{
-		auto strUpgrade = pHttpClient->header_getStr("Upgrade", "");
-		if (0 != strcmp(strUpgrade, "websocket"))
-		{
-			CELLLog_Error("not found Upgrade:websocket");
-			return;
+		if (clientState_join == pWSClient->state())
+		{	//握手
+			if (pWSClient->handshake())
+				pWSClient->state(clientState_run);
+			else
+				pWSClient->state(clientState_close);
 		}
-
-		auto cKey = pHttpClient->header_getStr("Sec-WebSocket-Key", nullptr);
-		if (!cKey)
-		{
-			CELLLog_Error("not found Sec-WebSocket-Key");
-			return;
+		else {
+			//处理数据帧
 		}
-
-		std::string sKey = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
-
-		sKey = cKey + sKey;
-
-		unsigned char strSha1[20] = {};
-		SHA1_String((const unsigned char*)sKey.c_str(), sKey.length(), strSha1);
-
-		std::string sKeyAccept = Base64Encode(strSha1, 20);
-
-
-		char resp[256] = {};
-		strcat(resp, "HTTP/1.1 101 Switching Protocols\r\n");
-		strcat(resp, "Connection: Upgrade\r\n");
-		strcat(resp, "Upgrade: websocket\r\n");
-		strcat(resp, "Sec-WebSocket-Accept: ");
-		strcat(resp, sKeyAccept.c_str());
-		strcat(resp, "\r\n\r\n");
-
-		pHttpClient->SendData(resp, strlen(resp));
 	}
-
 private:
 
 };
