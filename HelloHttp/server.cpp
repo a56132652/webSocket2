@@ -10,7 +10,7 @@ public:
 	virtual void OnNetMsg(Server* pServer, Client* pClient, netmsg_DataHeader* header)
 	{
 		TcpServer::OnNetMsg(pServer, pClient, header);
-		HttpClient* pHttpClient = dynamic_cast<HttpClient*>(pClient);
+		HttpClientS* pHttpClient = dynamic_cast<HttpClientS*>(pClient);
 		if (!pHttpClient)
 			return;
 
@@ -65,7 +65,7 @@ public:
 		}
 	}
 
-	bool respFile(HttpClient* pHttpClient)
+	bool respFile(HttpClientS* pHttpClient)
 	{
 		std::string filePath;
 

@@ -4,7 +4,7 @@
 #include"Client.hpp"
 #include"SplitString.hpp"
 #include"KeyString.hpp"
-
+#include<map>
 namespace doyou {
 	namespace io {
 		//客户端数据类型

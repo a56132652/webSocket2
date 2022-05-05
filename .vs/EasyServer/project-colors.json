@@ -25,7 +25,12 @@
       "ProjectGuid": "e8cd44e4-197c-4180-9b59-ead109b63bfb",
       "DisplayName": "EasyHttpClient",
       "ColorIndex": 3
+    },
+    "f60b98ff-dd7a-4c3b-b77e-6e80a21bafec": {
+      "ProjectGuid": "f60b98ff-dd7a-4c3b-b77e-6e80a21bafec",
+      "DisplayName": "WebSocketServer",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

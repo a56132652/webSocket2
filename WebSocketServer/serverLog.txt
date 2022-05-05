@@ -1,0 +1,32 @@
+Info [2019-4-7 16:55:6]Log::setLogPath success,<serverLog.txt,w>
+Error [2019-4-7 16:55:6]Config::getStr not find <strIP>
+Info [2019-4-7 16:55:6]Config::getStr strIP=any
+Error [2019-4-7 16:55:6]Config::getStr not find <nPort>
+Info [2019-4-7 16:55:6]Config::getInt nPort=4567
+Error [2019-4-7 16:55:6]Config::getStr not find <nThread>
+Info [2019-4-7 16:55:6]Config::getInt nThread=1
+Error [2019-4-7 16:55:6]Config::getStr not find <nSendBuffSize>
+Info [2019-4-7 16:55:6]Config::getInt nSendBuffSize=10240
+Error [2019-4-7 16:55:6]Config::getStr not find <nRecvBuffSize>
+Info [2019-4-7 16:55:6]Config::getInt nRecvBuffSize=8192
+Error [2019-4-7 16:55:6]Config::getStr not find <nMaxClient>
+Info [2019-4-7 16:55:6]Config::getInt nMaxClient=65535
+Info [2019-4-7 16:55:6]-ipv4
+Info [2019-4-7 16:55:6]create socket<188> success...
+Info [2019-4-7 16:55:6]bind port<4567> success...
+Info [2019-4-7 16:55:6]listen port<188> success...
+Info [2019-4-7 16:55:7]thread<1>,time<1.000704>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-4-7 16:55:8]thread<1>,time<1.000368>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-4-7 16:55:9]thread<1>,time<1.000220>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-4-7 16:55:10]thread<1>,time<1.000172>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-4-7 16:55:11]thread<1>,time<1.000207>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-4-7 16:55:12]thread<1>,time<1.000320>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-4-7 16:55:13]thread<1>,time<1.000285>,socket<188>,Accept<0>,Join<0>,recv<0>,msg<0>
+Info [2019-4-7 16:55:13]Accept_IP: 192.168.1.117, 116
+Info [2019-4-7 16:55:14]thread<1>,time<1.000225>,socket<188>,Accept<1>,Join<1>,recv<1>,msg<1>
+Info [2019-4-7 16:55:15]thread<1>,time<1.000307>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-4-7 16:55:16]thread<1>,time<1.000260>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-4-7 16:55:17]thread<1>,time<1.000290>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-4-7 16:55:18]thread<1>,time<1.000339>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-4-7 16:55:19]thread<1>,time<1.000310>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>
+Info [2019-4-7 16:55:20]thread<1>,time<1.000209>,socket<188>,Accept<1>,Join<1>,recv<0>,msg<0>

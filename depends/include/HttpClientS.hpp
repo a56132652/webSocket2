@@ -161,7 +161,10 @@ namespace doyou {
 				}
 				//根据字段，做出相应处理
 				const char* str = header_getStr("Connection", "");
-				_keepalive = (0 == strcmp("keep-alive", str) || 0 == strcmp("Keep-Alive", str));
+				_keepalive = (0 == strcmp("keep-alive", str)
+					|| 0 == strcmp("Keep-Alive", str)
+					|| 0 == strcmp("Upgrade", str)
+					);
 				
 				return true;
 			}
