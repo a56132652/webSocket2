@@ -31,9 +31,9 @@ namespace doyou {
 					if (pWSClient->handshake())
 						pWSClient->state(clientState_run);
 					else
-						pWSClient->state(clientState_close);
+						pWSClient->onClose();
 				}
-				else {
+				else if(clientState_run == pWSClient->state()) {
 					//处理数据帧
 					OnNetMsgWS(pServer, pWSClient);
 				}
